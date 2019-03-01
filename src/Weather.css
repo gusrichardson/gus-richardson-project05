@@ -1,0 +1,7 @@
+.weatherContainer {
+    /* width: 800px; */
+    height: 200px;
+    border: 2px solid red;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
