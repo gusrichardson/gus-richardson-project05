@@ -18,11 +18,21 @@ import "./Weather.css";
 class Weather extends Component {
 
 
+
     render() {
         return (
             <div className="weatherContainer" >
                 <h2>This is the Weather Container</h2>
-                <p>{this.props.summary}</p>
+                <ul>
+                    {this.props.daily && this.props.daily.map((result) => {
+                        return <li>{result.summary}</li>
+                    })}
+                </ul>
+                {/* 
+                {this.props.summary && <p>The weather forcast for today is: "{this.props.summary}"</p>}
+                {this.props.high && <p>with a high of {this.props.high}
+                </p>}
+                {this.props.low && <p>and a low of {this.props.low}</p>} */}
 
             </div>
         )

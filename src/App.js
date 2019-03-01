@@ -25,11 +25,12 @@ class App extends Component {
     const data = await apiCall.json();
     // console.log(data.daily.data);
     const daily = data.daily.data;
-    console.log(daily[0], daily[1]);
+    console.log(daily, "this is daily");
     this.setState({
-      high: daily[0].temperatureHigh,
-      low: daily[0].temperatureLow,
-      summary: daily[0].summary,
+      // high: daily.temperatureHigh,
+      // low: daily.temperatureLow,
+      // summary: daily.summary,
+      daily: daily
     })
   }
 
@@ -38,9 +39,10 @@ class App extends Component {
       <div className="App">
         <Title />
         <Weather
-          high={this.state.high}
-          low={this.state.low}
-          summary={this.state.summary}
+          daily={this.state.daily}
+        // high={this.state.high}
+        // low={this.state.low}
+        // summary={this.state.summary}
         />
         <FormFile getWeather={this.getWeather} />
       </div>
