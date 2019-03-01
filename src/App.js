@@ -26,6 +26,7 @@ class App extends Component {
     // console.log(data.daily.data);
     const daily = data.daily.data;
     console.log(daily, "this is daily");
+    // console.log(result.icon);
     this.setState({
       // high: daily.temperatureHigh,
       // low: daily.temperatureLow,

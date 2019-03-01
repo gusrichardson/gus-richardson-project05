@@ -1,7 +1,26 @@
 .weatherContainer {
     /* width: 800px; */
-    height: 200px;
+    height: 400px;
     border: 2px solid red;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(assets/skyImage.jpg);
+    background-size: cover;
+    background-position: middle;
+    background-repeat: no-repeat;
+}
+
+.dayForecast {
+    width: 10%;
+    height: 100%;
+    border: 2px solid green;
+    font-size: 12px;
+}
+
+#weatherIcon {
+    width: 20px;
+    height: 20px;
+    display: block;
 }
