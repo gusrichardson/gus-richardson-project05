@@ -7,6 +7,8 @@ class FormFile extends Component {
                 <input type="text" id="latitude" name="latitude" placeholder="latitude" />
                 <input type="text" id="longitude" name="longitude" placeholder="longitude" />
                 <button>Weekly Forecast</button>
+                <textarea id="mainText" placeholder="text here"></textarea>
+                <button id="submitButton">Button</button>
             </form>
         )
     }

@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import firebase from './firebase';
 import Title from './Title';
 import Weather from './Weather';
 import FormFile from './FormFile';
+import PackingList from './PackingList';
 
 const key = '0eb7bbceb524f6b41c9a80030c913889';
 const proxy = 'https://cors-anywhere.herokuapp.com/';
@@ -15,8 +17,11 @@ class App extends Component {
     summary: ""
   }
 
+
   getWeather = async (e) => {
     e.preventDefault();
+    const app = firebase.app();
+    console.log(app);
     const lat = e.target.elements.latitude.value;
     console.log(lat);
     const long = e.target.elements.longitude.value;
@@ -28,6 +33,7 @@ class App extends Component {
     console.log(daily, "this is daily");
     // console.log(result.icon);
     console.log(daily[0].temperatureHigh, "this is the high");
+
     this.setState({
       high: daily.temperatureHigh,
       low: daily.temperatureLow,
@@ -47,6 +53,8 @@ class App extends Component {
           summary={this.state.summary}
         />
         <FormFile getWeather={this.getWeather} />
+        <PackingList />
+
       </div>
 
     );
