@@ -17,10 +17,16 @@
     height: 100%;
     border: 2px solid green;
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#weatherIcon {
-    width: 20px;
-    height: 20px;
+img {
+    width: 100%;
+    height: 100px;
     display: block;
+    border: 2px solid pink;
 }
+
+

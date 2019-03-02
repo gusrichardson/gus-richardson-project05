@@ -23,14 +23,15 @@ class App extends Component {
     console.log(long);
     const apiCall = await fetch(`${proxy}https://api.darksky.net/forecast/${key}/${lat},${long}`);
     const data = await apiCall.json();
-    // console.log(data.daily.data);
+    console.log(data.daily.data);
     const daily = data.daily.data;
     console.log(daily, "this is daily");
     // console.log(result.icon);
+    console.log(daily[0].temperatureHigh, "this is the high");
     this.setState({
-      // high: daily.temperatureHigh,
-      // low: daily.temperatureLow,
-      // summary: daily.summary,
+      high: daily.temperatureHigh,
+      low: daily.temperatureLow,
+      summary: daily.summary,
       daily: daily
     })
   }
@@ -41,9 +42,9 @@ class App extends Component {
         <Title />
         <Weather
           daily={this.state.daily}
-        // high={this.state.high}
-        // low={this.state.low}
-        // summary={this.state.summary}
+          high={this.state.high}
+          low={this.state.low}
+          summary={this.state.summary}
         />
         <FormFile getWeather={this.getWeather} />
       </div>
