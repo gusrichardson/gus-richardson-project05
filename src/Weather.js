@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import "./Weather.css";
+// import "./Weather.css";
+import "./App.css";
 import clear_day from './clear_day.png';
 
 
