@@ -28,6 +28,14 @@ class Suitcase extends Component {
         })
     }
 
+    deleteItem = () => {
+        let newListArray = this.state.clothingList;
+        newListArray.pop();
+        this.setState({
+            clothingList: newListArray,
+        })
+    }
+
     render() {
         return (
             <div className="clothingItems">
@@ -46,9 +54,12 @@ class Suitcase extends Component {
                     <h2>Clothing to Bring</h2>
                     <ul>
                         {this.state.clothingList.map((item) => {
-                            return <li>{item}</li>
+                            return <li className="clothesList">
+                                {item}
+                            </li>
                         })}
                     </ul>
+                    <button id="listDelete" onClick={() => this.deleteItem()}>Delete last</button>
                 </div>
             </div>
         )

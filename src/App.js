@@ -4,6 +4,7 @@ import Title from './Title';
 import Weather from './Weather';
 import FormFile from './FormFile';
 import Suitcase from './Suitcase';
+import MediaQueries from './MediaQueries.css';
 
 
 const key = '0eb7bbceb524f6b41c9a80030c913889';

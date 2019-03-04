@@ -1,0 +1,63 @@
+@media screen and (max-width: 1000px) {
+    .App {
+        height: auto;
+    }
+    .weatherContainer {
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: flex-start; */
+    }
+
+    .dayForecast {
+        width: 22%;
+        height: 240px;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .inputMobile {
+        display: block;
+        border: 2px solid red;
+        margin: 8px auto;
+       
+        /* text-align: left; */
+    }
+    .dayForecast {
+        width: 30%;
+        height: 240px;
+        margin: 5px;
+    }
+    #latitude, #longitude {
+        margin-right: 0px;
+        text-align: center;
+      }
+    #longLabel {
+        margin-left: 0px;
+    }
+    .weatherInput {
+        height: auto;
+    }
+    #forecastButton {
+        width: 220px;
+    }
+    .clothingItems {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clothingForm {
+        width: 80%;
+        height: 280px;
+    }
+    .suitcaseList {
+        margin-top: 40px;
+        width: 80%;
+        min-height: 340px;
+    }
+
+}

@@ -13,10 +13,10 @@ class Weather extends Component {
                     console.log(result.temperatureHigh, "this is the high result");
                     return <div className="dayForecast">
 
-                        <img src={result.icon.replace(/-/gi, "_").concat(".jpg")} alt={result.icon.replace(/-/gi, " ")} />
-                        <p>Weather Forecast: "{result.summary}"</p>
-                        <p>High: {result.temperatureHigh} F</p>
-                        <p>Low: {result.temperatureLow} F</p>
+                        {/* <img src={result.icon.replace(/-/gi, "_").concat(".jpg")} alt={result.icon.replace(/-/gi, " ")} /> */}
+                        <p><b>Forecast:</b> "{result.summary}"</p>
+                        <p><b>High:</b> {result.temperatureHigh} F <span id="low">
+                            <b>Low:</b> {result.temperatureLow} F</span></p>
 
                     </div>
                 })}
