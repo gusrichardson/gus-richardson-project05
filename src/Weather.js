@@ -9,7 +9,6 @@ class Weather extends Component {
         return (
             <div className="weatherContainer" >
                 {this.props.daily && this.props.daily.splice(0, 7).map((result) => {
-                    // console.log(result.temperatureHigh, "this is the high result");
                     return <div className="dayForecast">
                         <p><b>Forecast:</b> "{result.summary}"</p>
                         <p><b>High:</b> {result.temperatureHigh} F <span id="low">
