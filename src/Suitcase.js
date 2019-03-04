@@ -32,7 +32,7 @@ class Suitcase extends Component {
         return (
             <div className="clothingItems">
                 <div className="clothingForm">
-                    <label for="clothingInput">Add clothing here</label>
+                    <label htmlFor="clothingInput">Add clothing here</label>
                     <input
                         onChange={(e) => this.changeUserInput(e.target.value)}
                         value={this.state.userInput}

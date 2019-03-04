@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import "./Weather.css";
 import "./App.css";
-import clear_day from './clear_day.png';
+import partly_cloudy_day from './partly_cloudy_day.jpg';
 
 
 class Weather extends Component {
@@ -26,5 +26,3 @@ class Weather extends Component {
 }
 
 export default Weather;
-
-
