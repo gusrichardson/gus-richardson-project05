@@ -2,6 +2,11 @@
     .App {
         height: auto;
     }
+
+    .weatherInput {
+        height: auto;
+    }
+
     .weatherContainer {
         height: auto;
         flex-wrap: wrap;
@@ -20,10 +25,7 @@
 @media screen and (max-width: 900px) {
     .inputMobile {
         display: block;
-        border: 2px solid red;
         margin: 8px auto;
-       
-        /* text-align: left; */
     }
     .dayForecast {
         width: 30%;
@@ -60,4 +62,40 @@
         min-height: 340px;
     }
 
+}
+
+@media screen and (max-width: 700px) {
+    .dayForecast {
+        width: 45%;
+    }
+    .clothingForm {
+        background-size: 90% 100%;
+      }
+}
+
+@media screen and (max-width: 500px){
+    header {
+        height: auto;
+        line-height: 100px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .weatherContainer {
+        justify-content: center;
+        align-items: center;
+    }
+    .dayForecast {
+        width: 90%;
+    }
+
+    .clothingForm {
+        width: 100%;
+    }
+
+    .suitcaseList {
+        margin-top: 40px;
+        width: 100%;
+        min-height: 340px;
+    }
 }

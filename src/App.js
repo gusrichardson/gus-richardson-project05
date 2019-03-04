@@ -28,7 +28,7 @@ class App extends Component {
     this.setState({
       daily: daily
     })
-    console.log(this.state, "this state")
+    // console.log(this.state, "this state")
   }
 
   render() {
